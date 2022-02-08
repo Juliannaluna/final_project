@@ -44,9 +44,10 @@ li {
 .nav {
 	width: 50%;
 }
-.nav ul {
+.menu {
 	display: flex;
 	justify-content: space-around;
+	position: relative;
 }
 
 .nav ul li a {
@@ -68,6 +69,32 @@ li {
 .login a:hover {
 	background: #ececec;
 	color: #284854;
+}
+
+.submenu {
+	display: none;
+	flex-direction: column;
+	background: rgb(96,193,189, 0.6);
+	border-radius: 0 0 7px 7px;
+	padding: 42px 5px 0 5px;
+	position: absolute;
+	top: 19px;
+	left: 0px;
+}
+
+.sbmemu {
+	position: absolute;
+	left: 170px;
+
+}
+
+.submenu li {
+	padding: 13px 20px;
+	border-bottom: 1px solid #ececec;
+}
+
+li:hover .submenu {
+	display: flex;
 }
 
 .slogan-space {
@@ -390,3 +417,27 @@ h4 {
 .contact-img {
 	padding-top: 20px;
 }
+
+.move:hover {
+  animation: shake 1s;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+ 
+  20% {
+    transform: rotate(3deg);
+  }
+  
+  80% {
+    transform: rotate(-3deg);
+  }
+  
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
