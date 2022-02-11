@@ -494,6 +494,7 @@ h4 {
 
 	.nav-spasce {
 		max-width: 375px;
+		width: 100%;
 		height: 65px;
 		position: absolute;
 		top: 0;
@@ -669,7 +670,7 @@ h4 {
 	.mission-space a {
 	    padding: 7px;
 	    font-size: 14px;
-	    margin: 10px 120px;
+	    margin: 10px;
 	}
 
 	.motivation-space {
@@ -773,6 +774,4 @@ h4 {
     .fspan {
 		font-size: 11px;
 	}
-
 }
-
